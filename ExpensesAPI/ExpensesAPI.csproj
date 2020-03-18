@@ -167,12 +167,23 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202003170702284_initialjeromeTwo.cs" />
-    <Compile Include="Migrations\202003170702284_initialjeromeTwo.Designer.cs">
-      <DependentUpon>202003170702284_initialjeromeTwo.cs</DependentUpon>
+    <Compile Include="Migrations\202003180425369_updatethissummerfield12.cs" />
+    <Compile Include="Migrations\202003180425369_updatethissummerfield12.Designer.cs">
+      <DependentUpon>202003180425369_updatethissummerfield12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003180456102_oneToMany.cs" />
+    <Compile Include="Migrations\202003180456102_oneToMany.Designer.cs">
+      <DependentUpon>202003180456102_oneToMany.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\BookCategory.cs" />
+    <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Entry.cs" />
+    <Compile Include="Models\Grade.cs" />
+    <Compile Include="Models\OfficeAssignment.cs" />
+    <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\SummerField.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -259,8 +270,11 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202003170702284_initialjeromeTwo.resx">
-      <DependentUpon>202003170702284_initialjeromeTwo.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202003180425369_updatethissummerfield12.resx">
+      <DependentUpon>202003180425369_updatethissummerfield12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003180456102_oneToMany.resx">
+      <DependentUpon>202003180456102_oneToMany.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -14,4 +14,6 @@ namespace ExpensesAPI.Models
         public bool IsExpense { get; set; }
         public double Value { get; set; }
     }
+
+
 }

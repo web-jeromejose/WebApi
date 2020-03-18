@@ -7,13 +7,13 @@ namespace ExpensesAPI.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class initialjeromeTwo : IMigrationMetadata
+    public sealed partial class updatethissummerfield12 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(initialjeromeTwo));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(updatethissummerfield12));
         
         string IMigrationMetadata.Id
         {
-            get { return "202003170702284_initialjeromeTwo"; }
+            get { return "202003180425369_updatethissummerfield12"; }
         }
         
         string IMigrationMetadata.Source

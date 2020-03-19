@@ -55,11 +55,17 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Cors, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.6\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http.Cors, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.6\lib\net45\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
@@ -161,19 +167,16 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\EntriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Data\AppDbContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202003180425369_updatethissummerfield12.cs" />
-    <Compile Include="Migrations\202003180425369_updatethissummerfield12.Designer.cs">
-      <DependentUpon>202003180425369_updatethissummerfield12.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202003180456102_oneToMany.cs" />
-    <Compile Include="Migrations\202003180456102_oneToMany.Designer.cs">
-      <DependentUpon>202003180456102_oneToMany.cs</DependentUpon>
+    <Compile Include="Migrations\202003180601263_testnew.cs" />
+    <Compile Include="Migrations\202003180601263_testnew.Designer.cs">
+      <DependentUpon>202003180601263_testnew.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
@@ -270,11 +273,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202003180425369_updatethissummerfield12.resx">
-      <DependentUpon>202003180425369_updatethissummerfield12.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202003180456102_oneToMany.resx">
-      <DependentUpon>202003180456102_oneToMany.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202003180601263_testnew.resx">
+      <DependentUpon>202003180601263_testnew.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

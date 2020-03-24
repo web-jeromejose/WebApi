@@ -1,4 +1,5 @@
 ﻿using ExpensesAPI.Data;
+using ExpensesAPI.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace ExpensesAPI.Controllers
     public class EntriesController : ApiController
     {
         // install nuget web api cross origin then go to webapiconfig.
-     //   [DisableCors] //if you dont want to include this
+        //   [DisableCors] //if you dont want to include this
         public IHttpActionResult GetEntries()
         {
             try
@@ -34,6 +35,26 @@ namespace ExpensesAPI.Controllers
             }
 
 
+        }
+
+        [HttpPost]
+        public IHttpActionResult PostEntry([FromBody] Entry entry)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            try {
+                using (var context = new AppDbContext())
+                {
+                    context.Entries.Add(entry);
+                    context.SaveChanges();
+                    return Ok("Entry was created!");
+                }
+
+            }
+            catch(Exception ex) {
+                return BadRequest(ex.Message);
+            }
+            
         }
 
     }
